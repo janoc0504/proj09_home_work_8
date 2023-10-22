@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* common properties */
+:root {
+  --container-space: 15px;
+  --container-width: calc(1230px + var(--container-space) * 2)
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-space);
+}
+
+.wrap {
+  background-image: url(../assets/img/Hummer-EV-Dailycarblog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+/* Header */
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+
+.header-item {
+  text-decoration: none;
+  color: #B0B8D6;
+}
+
+/* Main */
+.main {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.main-h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #B0B8D6;
+  font-size: 50px;
+  text-transform: uppercase;
+  background-color: rgb(46, 72, 164);
+  border-radius: 15px;
+}
+
+/* blocks properties */
+.all-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.item {
+  max-width: 200px;
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: rgb(47, 47, 47);
+  padding: 0 var(--container-space);
+}
+
+.ref-item {
+  text-decoration: none;
+  color: #B0B8D6;
+}
+
+.img-item {
+  display: block;
+  margin: 0 auto;
+  max-width: 130px;
+}
+
+.main-h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-p {
+  text-align: center;
+  color: #B0B8D6;
+  margin-bottom: 18px;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-h2 {
+  text-align: center;
+  color: #B0B8D6;
+}
